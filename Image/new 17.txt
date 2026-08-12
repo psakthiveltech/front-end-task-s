@@ -1,7 +1,0 @@
-bird img
-shoebil=https://tse4.mm.bing.net/th/id/OIP.KZ4RPlbI3NYDly5vZIO_9gHaFS?cb=thfc1&w=1200&h=857&rs=1&pid=ImgDetMain&o=7&rm=3
-kaaka=https://th.bing.com/th/id/R.621b1b0abbe3f176424094c342ef276b?rik=C7xquUqkbCdR8w&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fe%2f0%2f3%2f388487.jpg&ehk=HPe9fxslK5ynlY4RpJ3xLm8BLJzW3lGufzNdKiHSZvQ%3d&risl=&pid=ImgRaw&r=0
-lier bird=https://media.australian.museum/media/dd/images/Dean_some_rights_reserved_CC_BY-NC_1.0df904a.width-1600.d0bad65.jpg
-
-bird video
- 
