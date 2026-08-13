@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <ul>
+      <li>Home</li>
+      <li>ConTact</li>
+      <li>Blog</li>
+      <li>About</li>
+    </ul>
+  </div>
+   
+  
+</body>
+<style>
+  ul li{
+    list-style: none;
+    font-size: 30px;
+    
+  }
+  ul{
+    display: flex;
+    gap: 30px;
+    position: relative;
+  }
+
+  h1{
+    
+  }
+  ul li::before{
+    content: '';
+    position: absolute;
+    transition: all 0.8s ease-in-out;
+    border-top: 2px solid rgb(255, 0, 0);
+    border-bottom: 2px solid rgb(255, 0, 0);
+    width: 100px;
+    height: 100px;
+    
+  }
+
+
+  ul li:hover::before{
+  transform: scaleY(1.7);
+  opacity: .1px;
+
+  }
+  
+</style>
+</html>
