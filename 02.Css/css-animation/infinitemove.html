@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="carosole">
+  <div class="group">
+  <div class="card">box-1</div>
+  <div class="card">box-2</div>
+  <div class="card">box-3</div>
+  <div class="card">box-4</div>
+  <div class="card">box-5</div>
+  <div class="card">box-6</div>
+  <div class="card">box-1</div>
+  <div class="card">box-2</div>
+  <div class="card">box-3</div>
+  <div class="card">box-4</div>
+  <div class="card">box-5</div>
+  <div class="card">box-6</div>
+</div>
+</div>
+
+</div>
+<style>
+.card{
+  flex: 0 0 5em;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  display: flex;justify-content: center;
+  align-items: center;
+}
+.group{
+  display: flex;
+  gap: 10px;
+  flex: 0 0 5em;
+  align-items: center;
+  animation: spin 2s infinite linear;
+}
+.carosole{
+  height: 150px;
+  width: 300px;
+  border: 1px solid red;
+  overflow-x: auto;
+}
+.carosole::-webkit-scrollbar{
+  display: none;
+}
+@keyframes spin{
+  from{
+    translate: 0%;
+  }
+  to{
+    translate: -100%;
+  }
+}
+</style>
+</body>
+</html>
