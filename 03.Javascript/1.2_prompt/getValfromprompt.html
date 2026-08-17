@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body id="btm">
+  <label for="name">Name :
+  <input id="name" type="text"></label>
+  <button id="btn">click</button>
+</body>
+<script>
+  // let name = prompt("what is your name")
+  // alert(`this is your name ${name}`)
+  let btn = document.getElementById("btn")
+  let txt = document.getElementById("name")
+  let txto = document.getElementById("btm")
+  let txtvalue = txt.value;
+  btn.addEventListener("click",function(){
+    txto.innerHTML = `hello${txtvalue}`
+  })
+  //1 letter captial leter//
+  let name = "ello"
+  let firstLettercap = name[0]
+  let slicing = name.slice(1)
+  document.write("this is output is "+ firstLettercap.toUpperCase() +slicing)
+  if (name === "hello"){
+    alert(`u can achived it ${firstLettercap.toUpperCase()+ slicing}`)
+  }
+  else{
+    alert("try again until u reach ur goal")
+  }
+
+</script>
+</html>

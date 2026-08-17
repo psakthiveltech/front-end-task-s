@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="add()">Add</button>
+  <button onclick="sub()">Sub</button>
+  <button onclick="ore1()">Odd/Even</button>
+  <button onclick="sec()">Secrect</button>
+  <button onclick="delay()">hello</button>
+  <button onclick="ff()">Hello</button>
+  <button onclick="seting()">Gooooo</button>
+
+  <h1 id="dis"></h1>
+</body>
+<script>
+  let num = 0;
+
+  function add(){
+    num++
+    console.log(`${num}`)
+  }
+  function sub(){
+    num--
+    if(num<=0){
+      num = 0
+      console.log(`You hit maximum num`)
+    }
+    else{
+    console.log(`${num}`)
+    }
+  }
+
+  //
+  let ore = 0;
+  function ore1(){
+    ore++
+    if(ore%2===0){
+      console.log(`this os even ${ore}`)
+    }
+    else{
+      console.log(`this os odd ${ore}`)
+    }
+  }
+//sec
+let secNUm= 0;
+function sec(){
+  secNUm++
+  if(secNUm===10){
+    secNUm = 0
+    console.log(`Secrect Unlocked`)
+  }
+  else{
+    console.log(`${secNUm}`)
+
+  }
+}
+//settimeout
+let abc = 10
+function delay(){
+  setInterval(() => {
+    if(abc>=0){
+      abc--
+      console.log(`${abc} `)
+    }
+    else{
+      console.log(`count is none`)
+    }
+  }, 1000);
+}
+//
+function ff(){
+  let abn = `Hi Hello`
+  let assets = setInterval(()=>{
+      abn+=1
+      console.log(abn)
+    },1000)
+    clearInterval(assets)
+}
+//
+const dis = document.getElementById("dis")
+let a = 0 
+function seting(){
+let ball= setInterval(()=>{
+    if(a<3){
+    a++
+    dis.innerHTML = a
+  }
+  else{
+    dis.innerHTML = "Goooo"
+    clearInterval(ball)
+  }
+},1000)
+}
+
+
+</script>
+</html>

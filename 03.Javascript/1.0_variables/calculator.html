@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <button onclick="add()">Add</button></br>
+  <button onclick="sub()">Sub</button></br>
+  <button onclick="Even()">even/odd</button></br>
+  <button onclick="suprise()">surprice</button></br>
+  <button onclick="sec()">sec</button></br>
+  <button onclick="timer()">sec</button></br>
+
+
+  <script>
+    let count = 0
+
+    function add() {
+      count++
+      console.log(count)
+    }
+    function sub() {
+      count--
+      if (count <= 0) {
+        count = 0
+        console.log(` u exect maximum : ${count}`)
+      }
+      else {
+        console.log(` ${count}`)
+
+      }
+    }
+    //
+    let num = 0
+    function Even() {
+      num++
+      if (num % 2 === 0) {
+        console.log(`${num} is Even`)
+      }
+      else {
+        console.log(`${num} is Odd`)
+      }
+    }
+    // Task 03
+    let a = 0
+    function suprise() {
+      a++
+      if (a === 10) {
+        a = 0
+        console.log("Secrect Unlocked")
+      }
+      else {
+        console.log(a)
+
+      }
+    }
+
+    //set time out
+    function sec() {
+      let c = 0
+      console.log(`this will take up to 2 second`)
+      setTimeout(() => {
+        c++
+        console.log(`${c}`)
+      }, 2000)
+    }
+    //timer()
+    function timer() {
+      let time = 10
+
+    let timer = setInterval(() => {
+        time--
+        if (time > 0) {
+          console.log(`${time} left`)
+        }
+        else {
+          console.log(`times up`)
+          clearInterval(timer)
+        }
+      }, 1000);
+    }
+
+
+
+  </script>
+
+</body>
+
+</html>
