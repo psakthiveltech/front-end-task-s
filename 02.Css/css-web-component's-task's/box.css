@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+img{
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+
+}
+/* .container{
+display: flex;
+justify-content: center;
+text-align: center;
+
+} */
+.imd{
+  height: 410px;
+  width: 250px;
+  margin: 0px 10px;
+  box-shadow: 8px 8px 8px 0.10px rgba(4, 2, 2, 0.17);
+  background-color: rgb(232, 189, 115);
+  padding: 0px 0px 10px 0px;
+}
+.three{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.re{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
