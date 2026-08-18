@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>INCLUDE,INDEXOF,STARTWIYH,ENDWITH</h1>
+  <script>
+    let a = "where the    element goes to in the index"
+    document.write(a.indexOf("index"))
+    document.write(","+a.indexOf("n"))
+    document.write(","+a.indexOf("nt")+"<br>")
+    // includes
+    document.write(a.includes("the"))
+    document.write( "<br>"+ a.includes("thoe"))
+    /// startwith
+    document.write("<br>"+"the start with is "+a.startsWith("where"))
+    document.write("<br>"+"the start with is "+a.startsWith("wHere"))
+    //endwith
+    document.write("<br>"+"the end with is "+a.endsWith("index"))
+    document.write("<br>"+"the end with is "+a.endsWith("indeX"))
+  </script>
+</body>
+</html>

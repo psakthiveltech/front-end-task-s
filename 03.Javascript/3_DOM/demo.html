@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="heloo()">press</button>
+  <h1 id="heading"></h1>
+</body>
+<script>
+  function heloo(){
+    const randomName =  Math.random()*10000+10000
+    document.getElementById("heading").innerHTML = randomName;
+
+  }
+
+</script>
+</html>

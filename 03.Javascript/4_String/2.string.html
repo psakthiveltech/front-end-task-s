@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+  let hello = "hello world"
+  let hi = hello [hello.length - 2]//[] for searching index
+  document.write(hello.length+"<div>")
+  document.write(`
+  ${hello[0]}`)
+  document.write(`
+  ${hello[4]}`)
+  document.write(`Thsi is 10th index :${hello[10]}`)
+  document.write(hi)
+/////
+
+let js = "javascript"
+console.log(`this word is '${js}' and it have '${js.kength}'' . `)
+console.log(`${js[10]}`)
+console.log(js[js.length])
+//pass word checker
+let isPassword = "Hello123hihi"
+
+let charLong = isPassword.length > 8
+let isstrong = isPassword.length>=12
+let fc = isPassword[0]
+let lc = isPassword[isPassword.length -1]
+console.log(`the ${isPassword} is yours the password is ${isstrong} it met the point of 8 character ${charLong}
+${fc} ${lc}`)
+</script>
+</html>

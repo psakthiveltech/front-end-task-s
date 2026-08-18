@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  
+  
+</style>
+<body>
+    <h1 id="cha1">Welcome to My Page</h1>
+  <p id="cha2">This is the original content.</p>
+ <button onclick="clickBABE()">Welcome</button>
+</body>
+<script>
+  function clickBABE(){
+  const btn = document.querySelector("button")
+  document.getElementById("cha1").innerHTML = "Title Changed 🎯"
+  document.getElementById("cha1").style.fontFamily = "Arial, Helvetica, sans-serif"
+  document.getElementById("cha2").innerHTML = "Message Updated: DOM Magic Done by psv "  
+  document.getElementById("cha2").style.fontFamily = "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"  
+  btn.style.backgroundColor="red"
+  btn.style.color="white"
+  btn.style.border="none"
+  btn.style.padding="9px"
+  btn.style.borderRadius="9px"
+  btn.innerHTML = "Changed successfully"
+}
+</script>
+</html>

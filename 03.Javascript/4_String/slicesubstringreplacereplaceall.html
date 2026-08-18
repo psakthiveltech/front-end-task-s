@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>SLICE(),SUBSTRING(),REPLACE(),REPLACALL()</h1>
+</body>
+<script>
+  let s = "hello hi iam the only one who is can change allthing with gods helps "
+  //slice
+  document.writeln(s.slice(0,6))
+  document.writeln("<br>"+"2nh"+s.slice(0))
+  document.writeln("<br>"+"3rd"+s.slice(-6))
+  document.writeln("<br>"+s.slice(5,7))
+  // same as slice
+  document.writeln("this is third"+"<br>"+s.substring(21)+"<br>")
+
+//
+  document.writeln("this is replace"+s.replace("hello","HELLO")+"<br>")
+  document.writeln(s.replace("h","*")+"<br>")
+//
+  document.writeln(s.replaceAll("h","*")+"<br>")
+  document.writeln(s.replaceAll(" ","*"))
+
+</script>
+</html>

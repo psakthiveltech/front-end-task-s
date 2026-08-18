@@ -1,0 +1,61 @@
+<input type="text" id="name">
+<script>
+document.getElementById("name").addEventListener("keydown", function() {
+  alert("You pressed a key!");
+});
+</script>
+<button id="btn">Click Me</button>
+<script>
+document.getElementById("btn").addEventListener("click", function() {
+  alert("You clicked the button!");
+});
+</script>
+
+<form id="myForm">
+  <input id="user" type="text" placeholder="Your name">
+  <button>Submit</button>
+</form>
+<script>
+document.getElementById("myForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // stop reloading
+  alert("Form submitted!");
+});
+</script>
+<script>window.addEventListener("scroll", function() {
+  console.log("You scrolled the page!");
+});
+document.addEventListener("click", function(e) {
+  console.log("You clicked on:", e.target.tagName);
+});
+
+
+</script>
+<style>
+
+</style>
+<div id="big" style="padding:40px; background:lightblue;">
+  Big Box
+  <div id="medium" style="padding:30px; background:lightgreen;">
+    Medium Box
+    <div id="small" style="padding:20px; background:lightpink;">
+      Small Box
+    </div>
+  </div>
+</div>
+
+<script>
+document.getElementById("big").addEventListener("click", function() {
+  alert("Big box clicked!");
+});
+
+document.getElementById("medium").addEventListener("click", function() {
+  alert("Medium box clicked!");
+});
+
+document.getElementById("small").addEventListener("click", function() {
+  alert("Small box clicked!");
+});
+</script>
+
+
+

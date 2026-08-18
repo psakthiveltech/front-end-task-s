@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <button onclick="clicki()">hello</button>
+  <h1 id="hs"></h1>
+  <div id="hello"></div>
+  <label for="name">Name :</label>
+  <input id="heloo" type="number">
+  <button id="kello" onclick="fubs()">click</button>
+  <h1 id="ebf"></h1> -->
+  <!-- this is for check multiple values(inputs) -->
+    
+   <input type="text" id="op1"  >
+   <input type="text" id="op2" required>
+   <input type="number" id="op3" required>
+   <button type="submit" class="qeen" onclick="quickRun()">click</button> 
+   <h1 id="correct"></h1>
+</body>
+<script>
+  function  quickRun(){
+  const opOne = document.getElementById("op1")
+  const opOneVal = opOne.value;
+
+  const opTwo = document.getElementById("op2")
+  const opTwoVal = opTwo.value;
+
+  const opThree = document.getElementById("op3")
+  const opThreeVal = opThree.value;
+
+  
+  if(isNaN(opOneVal) && (isNaN(opTwoVal)&&(opThreeVal))){
+    document.getElementById("correct").innerHTML = "ur correct"
+  }
+  else{
+    document.getElementById("correct").innerHTML = "ur not correct"
+
+  }
+
+
+  
+
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+//   let ranvalue = Math.floor(Math.random()*100);
+//   function clicki(){
+//     ranvalue = Math.floor(Math.random()*100);
+//   document.getElementById("hs").innerHTML = ranvalue;
+//   }
+//   function fubs(){
+//     const compare = document.getElementById("heloo")
+//     const com = Number(compare.value);
+//     if (ranvalue===com){
+//       document.getElementById("ebf").innerHTML = com + "correct";
+//     }
+//     else{
+//       document.getElementById("hello").innerHTML = com + "no ";
+
+//     }
+//   }
+
+//   function clicki(){
+//     const a = Math.floor(Math.random()*44);
+//   document.getElementById("hs").innerHTML = a;
+
+// if(a>0&&a<40){
+//   document.getElementById("hello").innerHTML = "success"
+
+// }
+// else{
+//   document.getElementById("hello").innerHTML = "Not success"
+
+// }
+//   }
+// const Myinput = document.getElementById("heloo");
+
+// function fubs(){
+// document.getElementById( "ebf").innerHTML ="hello "+ Myinput.value
+// }
+
+
+</script>
+</html>

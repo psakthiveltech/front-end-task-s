@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .card{
+      height: 100px;
+      width: 200px;
+      box-shadow: 10px 10px 10px  0.17 rgba(0,0,0,0.17);
+    }
+  </style>
+</head>
+<body>
+  <button onclick="btn()">change destiny</button>
+  <div class="container"></div>
+  <!-- <button onclick="ok()">random number</button>
+  <h1 id="ideal"></h1> -->
+</body>
+<script>
+  function btn(){
+ const hello =  document.createElement("p");
+ hello.innerHTML = "hello";
+ hello.style.color = "red";
+ hello.style.backgroundColor = "black";
+
+ document.body.appendChild(hello)
+ }
+</script>
+</html>

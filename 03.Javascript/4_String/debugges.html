@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+  // A junior developer built this username validator - find and fix the bugs!
+function validateUsername(username) {
+    // Requirements:
+    // - Must be between 3 and 15 characters
+    // - Cannot start with a number
+    // - Must show first 3 characters for preview
+    
+    const length = username.length;
+    const firstChar = username[1]; // 🐛 Bug here!
+    const firstThree = username[0] + username[1] + username[2];
+    
+    if (length < 3 && length > 15) { // 🐛 Bug here!
+        return "Invalid length";
+    }
+    
+    if (!isNaN(firstChar)) {
+        return "Cannot start with number";
+    }
+    
+    return `Valid! Preview: ${firstThree}...`;
+}
+
+// Test cases - which should pass/fail?
+console.log(validateUsername("alex"));    // Should pass
+console.log(validateUsername("1ucky"));   // Should fail  
+console.log(validateUsername("jo"));      // Should fail
+console.log(validateUsername("superlongusername")); // Should fail
+
+
+function validateUsername(username) {
+    
+    const lengths = username.length;
+    const firstChar = username[1]; 
+    const first = username[0] ;
+    const second = username[1];
+    const Three = username[2];
+    const allname = first+second+Three
+    
+    if (lengths.length < 3 && lengths.length > 15) {  
+        return "Invalid length";
+    }
+    
+    if (!isNaN(first)) {
+        return "Cannot start with number";
+    }
+    
+    return `Valid! Preview: ${allname}...`;
+}
+
+console.log(validateUsername("alex"));     
+</script>
+</html>

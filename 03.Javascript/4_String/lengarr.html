@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+  const password = "SecurePass123";
+
+// Check if password meets requirements:
+// - At least 8 characters long
+// - Contains at least 12 characters for "strong" rating
+// - Get the first and last character
+let charlong = password.length>8
+let thisStrong = password.length>=12
+let first = password[0]
+let newmethod = password[password.length - 1]
+
+alert(`Your password is ${password} and it is have more than 8 char ${charlong} also it is strong ${thisStrong} 
+the 1st letter is ${first} and this is last letter ${newmethod}`)
+</script>
+</html>

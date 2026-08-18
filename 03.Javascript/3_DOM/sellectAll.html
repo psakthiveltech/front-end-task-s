@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="container">
+ <div class="cards"></div>
+ <div class="cards"></div>
+ <div class="cards"></div>
+ <div class="cards"></div>
+ 
+ </div>
+</body>
+<script>
+const card = document.querySelectorAll(".cards")
+card.forEach(anyname=>{
+  anyname.style.height = "400px"
+  anyname.style.width = "300px"
+  anyname.style.marginLeft = "100px"
+  anyname.style.boxShadow = "10px 10px 10px 0.17px rgba(0,0,0,0.17)"
+})
+const container01 = document.getElementById("container")
+container01.style.display = "flex"
+container01.style.justifyContent = "center"
+</script>
+</html>
+
+
