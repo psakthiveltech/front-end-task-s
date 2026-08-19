@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+  const Dogs = {
+    name: "dabar",
+    age: 3,
+    color: "Smoke white",
+
+    Bark: function () {
+      console.log(`loll lol MY NAME IS ${this.name} hahaahaaha.....`)
+    },
+    Walk: function () {
+      console.log(`My Age is ${this.age} ....`)
+    },
+    Talk: function () {
+      console.log(`My color  ${this.color} ....`)
+    }
+  };
+  Dogs.Bark()
+  Dogs.Walk()
+  Dogs.Talk()
+
+  //this is for class //book liabrary//
+  class Book {
+    constructor(Title, author, ISBN, availabilitystatus) {
+      this.Title = Title;
+      this.author = author;
+      this.ISBN = ISBN;
+      this.availabilitystatus = 10;
+    }
+    bookinfo() {
+      console.log(`Title of the book is ${this.Title}
+      the ${this.author} wrote this book
+      the available count is ${this.availabilitystatus}`)
+    }
+    bookBorrow(){
+            if (this.availabilitystatus > 0) {
+        this.availabilitystatus -= 1;
+        console.log(`the remaing is ${this.availabilitystatus}`)
+      }
+      else {
+        console.log(`the shef is empty`)
+      }
+    }
+    bookReturn(){
+      if(this.availabilitystatus<=9){
+        this.availabilitystatus+=1
+        console.log(`the remaing is ${this.availabilitystatus}`)
+
+      }
+      else{
+        return this.availabilitystatus
+      }
+    }
+  }
+  class Ebook extends Book {
+    constructor(Title, author, ISBN, availabilitystatus, FileSize, dowloadlink) {
+      super(Title, author, ISBN, availabilitystatus)
+      this.FileSize = FileSize;
+      this.dowloadlink = dowloadlink;
+    }
+    bookinfo() {
+      console.log(`Title of the book is ${this.Title}
+      the ${this.author} wrote this book
+      the file size is ${this.FileSize}
+      we can use this link to download ${this.dowloadlink}
+      this is unlimited source`)
+    }
+  }
+  class PhysicalBook extends Book {
+    constructor(Title, author, ISBN, availabilitystatus, shelflocation, condition) {
+      super(Title, author, ISBN, availabilitystatus)
+      this.shelflocation = shelflocation;
+      this.condition = condition;
+    }
+    bookinfo() {
+      console.log(`Title of the book is ${this.Title}
+      the ${this.author} wrote this book
+      the shelf no is ${this.shelflocation}
+      we cancheck the condition os the book ${this.condition}
+      remaining BOOK ${this.availabilitystatus}`)
+    }
+  }
+  let communication = new PhysicalBook("H T W F A I P", "CARNIGE", 12354785, 1, "12C", "NEW VERY GOOD")
+  communication.bookinfo()
+  communication.bookBorrow()
+  communication.bookBorrow()
+  communication.bookBorrow()
+  communication.bookBorrow()
+  communication.bookBorrow()
+  communication.bookBorrow()
+  communication.bookBorrow()
+  communication.bookBorrow()
+  communication.bookBorrow()
+  communication.bookBorrow()
+  communication.bookBorrow()
+  let SkillSdevelepment = new PhysicalBook("E T F", "tracy", 78965412,0, "16l", "very good")
+  SkillSdevelepment.bookinfo()
+  SkillSdevelepment.bookBorrow()
+  SkillSdevelepment.bookBorrow()
+  SkillSdevelepment.bookBorrow()
+  SkillSdevelepment.bookBorrow()
+  SkillSdevelepment.bookBorrow()
+  SkillSdevelepment.bookBorrow()
+  SkillSdevelepment.bookBorrow()
+  SkillSdevelepment.bookBorrow()
+  SkillSdevelepment.bookBorrow()
+  SkillSdevelepment.bookBorrow()
+  SkillSdevelepment.bookBorrow()
+  SkillSdevelepment.bookReturn();
+  SkillSdevelepment.bookReturn();
+  SkillSdevelepment.bookReturn();
+  SkillSdevelepment.bookReturn();
+  SkillSdevelepment.bookReturn();
+  SkillSdevelepment.bookReturn();
+  SkillSdevelepment.bookReturn();
+  SkillSdevelepment.bookReturn();
+  SkillSdevelepment.bookReturn();
+  SkillSdevelepment.bookReturn();
+  SkillSdevelepment.bookReturn();
+  SkillSdevelepment.bookReturn();
+  SkillSdevelepment.bookReturn();
+</script>
+
+</html>

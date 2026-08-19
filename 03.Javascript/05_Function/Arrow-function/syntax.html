@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Arrow function</h1>
+  <h1 id="dis"></h1>
+</body>
+<script>
+    let dis = document.getElementById("dis")
+
+  let calling = ((hello,hi)=>{
+    console.log("does something...")
+    dis.innerHTML = "hello"+(hello+hi)
+  })
+   
+   calling(1,2)
+
+
+   //task01
+   let person = {
+    name:"ghilli",
+    greet(){
+      console.log(`hi am ${ this.name}..`)
+    }
+    };
+   person.greet()
+
+//
+function Counter() {
+  let value = 0;
+
+  let a =  setInterval( ()=>{
+ if (value<10){
+  console.log(value)
+  value++
+ }
+ else{
+  console.log(value)
+  clearInterval(a)
+ }
+  }, 1000);
+}
+
+  Counter();
+
+ 
+</script>
+</html>
