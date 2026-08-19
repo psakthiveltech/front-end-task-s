@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+  //filter
+  let arrfil = [4, 4, 5, 6, 6, 9]
+  let findTheman = arrfil.filter(a => a >= 6)
+  document.writeln(findTheman + "<br>");
+
+  //map
+  let arr2 = ["spider", "bat", "iron", "super"]
+  let addMan = arr2.map(a => a + "-MAN")
+  document.writeln(addMan + "<br>")
+  //reduce
+  let hourese = ["G-horse-1", "G-horse-2", "G-horse-3", "G-horse-4", "G-horse-5", "G-horse-6"]
+  let oneContainer = hourese.reduce((a, b) => a + "," + b)
+  document.writeln(oneContainer +"<br>")
+  //combain
+  var cards = [
+  { name: "shoes", price: 1200, quality: 2, instock: true },
+  { name: "T-shirts", price: 500, quality: 3, instock: false },
+  { name: "watch", price: 5000, quality: 10, instock: true },
+  { name: "cup", price: 700, quality: 10, instock: true }
+];
+  let able = cards.filter(cards => cards.instock===true)
+  let notable = cards.filter(cards => cards.instock === false)
+  let num = cards.map(price=>price.price*price.quality)
+  let sun = num.reduce((j,g)=>j+g,0)
+  console.log(able);
+  console.log(notable);
+  console.log(num)
+  console.log(sun)
+
+    let movies = [
+  { title: "Inception", rating: 8.8 },
+  { title: "Avatar", rating: 7.8 },
+  { title: "The Room", rating: 3.6 },
+  { title: "Interstellar", rating: 8.6 },
+  { title: "Twilight", rating: 5.2 }
+];
+let highrating = movies.filter(m=>m.rating>=7.5)
+let moviesName = movies.map(l=>l.title)
+let count = movies.filter(h=>h.rating>=7)
+let cuntreduce = movies.filter(k=>k.rating>=6)
+
+console.log(highrating)
+console.log(moviesName)
+console.log(count.length);
+console.log(cuntreduce)
+
+let products = [
+  { name: "Laptop", price: 50000 },
+  { name: "Phone", price: 20000 },
+  { name: "Watch", price: 5000 }
+];
+let a = products.reduce((l,m=>l+m.price))
+console.log()
+
+
+
+
+</script>
+
+</html>
