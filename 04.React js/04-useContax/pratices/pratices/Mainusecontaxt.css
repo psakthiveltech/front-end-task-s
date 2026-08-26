@@ -1,0 +1,16 @@
+.dark{
+  color: aliceblue;
+  background-color: black;
+}
+.light{
+  color: black;
+  background-color: aliceblue;
+}
+*{
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+button{
+  background-color: rgb(144, 108, 64);
+}

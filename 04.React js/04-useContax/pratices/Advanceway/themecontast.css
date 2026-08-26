@@ -1,0 +1,32 @@
+.dark{
+  color:white;
+  background-color: black;
+}
+.light{
+  color: black;
+  background-color: aliceblue;
+}
+.second-dark{
+  color: red;
+  background-color: blueviolet;
+}
+.second-light{
+  color:blueviolet;
+  background-color: red;
+}
+.third-dark{
+  color: rgb(154, 227, 44);
+  background-color: rgb(197, 216, 216);
+}
+.third-light{
+  color: rgb(197, 216, 216);
+  background-color: rgb(154, 227, 44);
+}
+.fourth-dark{
+  color: gold;
+  background-color: black;
+}
+.fourth-light{
+  color: black;
+  background-color: gold;
+}
